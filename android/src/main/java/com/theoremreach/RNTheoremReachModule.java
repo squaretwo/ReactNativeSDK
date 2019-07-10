@@ -1,5 +1,6 @@
 package com.theoremreach;
 
+// import androidx.annotation.Nullable;
 import android.support.annotation.Nullable;
 
 import com.facebook.react.bridge.LifecycleEventListener;
@@ -49,11 +50,6 @@ public class RNTheoremReachModule extends ReactContextBaseJavaModule
     @ReactMethod
     public void showRewardCenter() {
         TheoremReach.getInstance().showRewardCenter();
-    }
-
-    @ReactMethod
-    public void enableDebugMode(boolean debug) {
-        TheoremReach.getInstance().enableDebugMode(debug);
     }
 
     @ReactMethod
